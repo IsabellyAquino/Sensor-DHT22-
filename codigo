@@ -8,7 +8,7 @@
 #define DHT_PIN 15 
 
 int temperatura = 0;
-int humidade = 0;
+int umidade = 0;
 
 DHTesp dhtSensor; 
  
@@ -41,7 +41,7 @@ void setup() {
 void loop() {
   TempAndHumidity data = dhtSensor.getTempAndHumidity();
   
-  float humidade = data.humidity;
+  float umidade = data.humidity;
   float temperatura = data.temperature;
 
   if(temperatura >= 35){
@@ -53,13 +53,13 @@ void loop() {
      Serial.println("TEMPERATURA: " + String(temperatura) + "°C" );
   }
   
-  if(humidade >= 70){
+  if(umidade >= 70){
     digitalWrite(12, HIGH);
-    Serial.println("ATENÇÃO: Humidade ultrapassa dos 70% no momento!");
-    Serial.println("HUMIDADE: " + String(humidade) + "%" );
+    Serial.println("ATENÇÃO: Umidade ultrapassa dos 70% no momento!");
+    Serial.println("UMIDADE: " + String(umidade) + "%" );
   } else {
     digitalWrite(12, LOW);
-    Serial.println("HUMIDADE: " + String(humidade) + "%" );
+    Serial.println("UMIDADE: " + String(umidade) + "%" );
   }
   Serial.println("___________________________________________________");
 
@@ -67,7 +67,7 @@ void loop() {
 
   String url = "https://api.thingspeak.com/update?api_key=CMTF41PLV6DMCUXA&field1=";
 
-  url = url + temperatura + "&field2=" + humidade;
+  url = url + temperatura + "&field2=" + umidade;
 
   http.begin(url);
   int httpCode = http.GET();
