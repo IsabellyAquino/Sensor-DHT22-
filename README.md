@@ -6,6 +6,7 @@ Projeto de teste e desenvolvimento com o Sensor DHT22 e ESP32 para aula de IOT-S
 SEGUE CÓDIGO COMENTADO PARA MELHOR ENTENDIMENTO DO PASSO A PASSO 
 
 
+
 //inclui as bibliotecas
 #include <DHTesp.h>
 #include "WiFi.h"
