@@ -7,16 +7,16 @@ SEGUE CÓDIGO COMENTADO PARA MELHOR ENTENDIMENTO DO PASSO A PASSO
 
 
 
-//inclui as bibliotecas
+//inclui as bibliotecas.
 #include <DHTesp.h>
 #include "WiFi.h"
 #include "HTTPClient.h"
 #include "PubSubClient.h"
-// define pino dos Leds 1 e 2
+// define pino dos Leds 1 e 2.
 #define LEDPIN1 14
 #define LEDPIN2 12
 
-// define pino do sensor
+// define pino do sensor.
 #define DHT_PIN 15
 
 WiFiClient espClient;
