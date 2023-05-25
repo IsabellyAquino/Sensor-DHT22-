@@ -1,11 +1,9 @@
 # Sensor-DHT22-
-Projeto de teste e desenvolvimento com o Sensor DHT22 e ESP32 para aula de IOT-SENAI com a API  ThingSpeak.
+Projeto de teste e desenvolvimento com o Sensor DHT22 e ESP32 para aula de IOT-SENAI com a API ThingSpeak.
+(Na última etapa fizemos conexão com hiveMQ e Document/Page desenvolvido pelo professor para converter json em MQTT)
 
-(na ultima etapa fizemos conexão com hiveMQ e document desenvolvido pelo professor para converter json em MQTT)
 
 SEGUE CÓDIGO COMENTADO PARA MELHOR ENTENDIMENTO DO PASSO A PASSO 
-
-
 
 //inclui as bibliotecas
 
